@@ -39,20 +39,12 @@ const handleChangeRemove = () => {
 };
 
 const handleChangeSearch = () => {
-  /* if (taskList.hasChildNodes()) {
-    let removeTaskIndex = parseInt(
-      prompt("Qual número da tarefa gostaria de remover?")
-    );
-    if (removeTaskIndex <= taskArray.length) {
-      taskList.removeChild(taskList.children[removeTaskIndex - 1]);
-      taskArray.splice(removeTaskIndex - 1, 1);
-      console.log(taskArray);
-    } else {
-      alert("Digite um número válido!");
+  let taskToSearch = prompt("Insira a task para pesquisar");
+  taskArray.filter((task) => {
+    if (task == taskToSearch) {
+      alert("A task existe!");
     }
-  } else {
-    alert("Não há o que remover!");
-  } */
+  });
 };
 
 const handleChangeEdit = () => {
